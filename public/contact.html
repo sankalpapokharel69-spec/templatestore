@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — WebCraft Studio</title>
+<meta name="description" content="Questions, custom work or feedback — contact the WebCraft Studio team.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='9' fill='%236366f1'/%3E%3Cpath d='M9 11l4 12 4-9 4 9 4-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem('wc_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');</script>
+</head>
+<body data-page="contact">
+<header id="site-header"></header>
+<main class="container page-wrap">
+  <div class="page-head"><h1>Contact Us</h1><p>Questions, custom work or feedback — we'd love to hear from you.</p></div>
+  <div class="contact-grid">
+    <div>
+      <div class="info-card"><span class="info-ico" aria-hidden="true">✉️</span><div><strong>Email us</strong><p>support@webcraftstudio.com — we reply within 24 hours, Sun–Fri.</p></div></div>
+      <div class="info-card"><span class="info-ico" aria-hidden="true">🕘</span><div><strong>Support hours</strong><p>Sunday–Friday, 9am–6pm (NPT). Tickets outside hours are answered next morning.</p></div></div>
+      <div class="info-card"><span class="info-ico" aria-hidden="true">📍</span><div><strong>Based in</strong><p>Kathmandu, Nepal — proudly serving customers worldwide.</p></div></div>
+      <div class="info-card"><span class="info-ico" aria-hidden="true">🛠️</span><div><strong>Custom work</strong><p>Need a template customized or built from scratch? Tell us about your project below.</p></div></div>
+    </div>
+    <form class="form-card" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" required minlength="2" maxlength="80" autocomplete="name"></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="c-subject">Subject</label><input id="c-subject" name="subject" maxlength="120" placeholder="How can we help?"></div>
+      <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" rows="6" required minlength="10" maxlength="3000" placeholder="Tell us everything…"></textarea></div>
+      <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+    </form>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

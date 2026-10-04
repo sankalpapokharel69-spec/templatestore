@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support & FAQ — WebCraft Studio</title>
+<meta name="description" content="Frequently asked questions and support tickets for WebCraft Studio customers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='9' fill='%236366f1'/%3E%3Cpath d='M9 11l4 12 4-9 4 9 4-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem('wc_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');</script>
+</head>
+<body data-page="support">
+<header id="site-header"></header>
+<main class="container page-wrap">
+  <div class="page-head" style="text-align:center"><h1>Support Center</h1><p>Answers first — and a real human if you still need one.</p></div>
+  <div class="faq-list">
+    <details class="reveal"><summary>How do I receive my template after purchase?</summary><p>After your payment is verified (usually within a few hours during support hours), a Download button appears on your order page and in My Account → My Orders. The download is a ZIP with all template files.</p></details>
+    <details class="reveal"><summary>What payment methods do you accept?</summary><p>We accept eSewa, Khalti and bank transfer. After placing your order, send the total and upload your payment proof (screenshot or receipt) on the confirmation page. We verify manually and unlock your downloads.</p></details>
+    <details class="reveal"><summary>Can I use one template on multiple websites?</summary><p>Each license covers one live website (plus unlimited staging/localhost previews). Need a multi-site license? Contact us — we offer bundle pricing.</p></details>
+    <details class="reveal"><summary>Do you offer refunds?</summary><p>Digital goods can't be "returned", but we stand by our work: if the files are broken or not as described, we fix it or refund you within 7 days of purchase.</p></details>
+    <details class="reveal"><summary>Can you customize a template for me?</summary><p>Yes! We offer customization services starting from $49 depending on scope. Send us a message via the contact form with your requirements for a quote.</p></details>
+    <details class="reveal"><summary>Are the templates responsive?</summary><p>Every template is tested on phones, tablets, laptops and large desktops before it's published. They also include a dark-mode toggle and respect reduced-motion preferences.</p></details>
+  </div>
+  <div class="page-head" id="ticket" style="text-align:center;margin-top:60px"><h2>Still stuck? Open a ticket</h2><p>We usually reply within a few hours during support hours.</p></div>
+  <form class="form-card" id="support-form" style="max-width:680px;margin:0 auto" novalidate>
+    <div class="form-row">
+      <div class="field"><label for="s-name">Full name</label><input id="s-name" name="name" required minlength="2" maxlength="80" autocomplete="name"></div>
+      <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="field"><label for="s-subject">Subject</label><input id="s-subject" name="subject" maxlength="120" placeholder="e.g. Download not working for Order #12"></div>
+    <div class="field"><label for="s-message">Describe the issue</label><textarea id="s-message" name="message" rows="5" required minlength="10" maxlength="3000" placeholder="Include your order number if relevant…"></textarea></div>
+    <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+  </form>
+</main>
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

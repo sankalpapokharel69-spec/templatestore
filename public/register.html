@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — WebCraft Studio</title>
+<meta name="description" content="Create your WebCraft Studio account — buy once, download forever.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='9' fill='%236366f1'/%3E%3Cpath d='M9 11l4 12 4-9 4 9 4-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem('wc_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');</script>
+</head>
+<body data-page="register">
+<header id="site-header"></header>
+<main class="container auth-wrap">
+  <div class="auth-card">
+    <h1>Create your account</h1>
+    <p>Join WebCraft Studio — buy once, download forever.</p>
+    <form id="register-form" novalidate>
+      <div class="field"><label for="r-name">Full name</label><input id="r-name" name="name" required minlength="2" maxlength="80" autocomplete="name"></div>
+      <div class="field"><label for="r-email">Email</label><input id="r-email" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="r-pass">Password</label><input id="r-pass" name="password" type="password" required minlength="8" maxlength="100" autocomplete="new-password" placeholder="At least 8 characters"></div>
+      <div class="field"><label for="r-pass2">Confirm password</label><input id="r-pass2" name="confirm" type="password" required minlength="8" autocomplete="new-password"></div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Create account</button>
+    </form>
+    <p class="auth-alt">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

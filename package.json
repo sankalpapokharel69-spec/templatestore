@@ -1,0 +1,19 @@
+{
+  "name": "webcraft-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:schema": "wrangler d1 execute webcraft-db --remote --file=schema.sql",
+    "db:schema:local": "wrangler d1 execute webcraft-db --local --file=schema.sql",
+    "db:seed": "wrangler d1 execute webcraft-db --remote --file=seed.sql",
+    "db:seed:local": "wrangler d1 execute webcraft-db --local --file=seed.sql"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

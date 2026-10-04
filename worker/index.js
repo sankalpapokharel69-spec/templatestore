@@ -891,7 +891,33 @@ app.delete('/api/admin/categories/:id', async (c) => {
 });
 
 /* ================= FALLBACKS & EXPORT ================= */
-app.notFound((c) => bad('Not found.', 404));
+app.notFound(async (c) => {
+  if (!c.env.ASSETS) {
+    return bad('Not found.', 404);
+  }
+
+  const url = new URL(c.req.url);
+
+  // Homepage
+  if (url.pathname === '/') {
+    const request = new Request(
+      new URL('/index.html', c.req.url),
+      c.req.raw
+    );
+
+    return c.env.ASSETS.fetch(request);
+  }
+
+  // Try to serve static frontend files
+  const asset = await c.env.ASSETS.fetch(c.req.raw);
+
+  if (asset.status !== 404) {
+    return asset;
+  }
+
+  return bad('Not found.', 404);
+});
+
 app.onError((err, c) => {
   console.error('Unhandled error:', err);
   return bad('Unexpected server error. Please try again.', 500);

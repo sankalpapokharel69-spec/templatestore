@@ -1,4 +1,4 @@
-name = "templatesite"
+name = "webcraft-ecommerce"
 main = "worker/index.js"
 compatibility_date = "2026-10-01"
 
@@ -13,4 +13,4 @@ database_id = "40cfa56b-e28c-4b14-b56f-a0bcb907b475"
 
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
-id = "72a692e6be694d99b561374d655d5378"
+id = "72a692e6be694d99bb561374d655d5378"
